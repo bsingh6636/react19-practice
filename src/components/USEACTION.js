@@ -1,6 +1,6 @@
-import axios from 'axios';
-import React, { useState, useActionState } from 'react'
+import React, { useActionState } from 'react'
 import { loginUser } from '../utils/loginUser';
+import { SubmitButton } from './SubmitButton';
 
 // export const USEACTION = () => {
 //     const [data, setData] = useState()
@@ -76,13 +76,14 @@ export const USEACTION = () => {
           />
       
           {/* Submit Button */}
-          <button
+          {/* <button
             className="rounded-lg bg-green-500 text-white p-2 hover:bg-green-600 focus:outline-none focus:ring-1 focus:ring-green-400 disabled:bg-gray-300"
             type="submit"
             disabled={isPending}
           >
             {isPending ? 'Submitting...' : 'Submit'}
-          </button>
+          </button> */}
+          <SubmitButton/>
         </form>
       
         {/* Error or Success Messages */}
